@@ -17,6 +17,6 @@ isGeneratingVersionToWebSaleRequestDetails = true
 1- 
 flutter build web --pwa-strategy=none
 
-Put the settings.file inside the folder and deploy on services.celtaware.com.br/downloads/lastversion
+Put the customer's settings.txt inside build/web and deploy on services.celtaware.com.br/downloads/lastversion. Keep enteprisePersonalizedCode as a quoted string (for example, "01") to preserve leading zeros.
 
-I am not sure, but maybe should put the web.config file inside the folder too
+Flutter includes web/web.config in build/web automatically. Deploy it alongside settings.txt so IIS serves .txt files as application/json.
